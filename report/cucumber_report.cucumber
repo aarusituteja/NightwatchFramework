@@ -1,0 +1,109 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "create-a-basic-page-with-minimal-fields;as-a-content-admin-i-want-to-create-a-minimal-page-in-the-back-end-with-default-banner-fields",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "As a content admin I want to create a Minimal page in the Back end with default banner fields",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 1438000000,
+              "error_message": "Error: An error occurred while retrieving a new session: \"session not created: This version of ChromeDriver only supports Chrome version 92\"\n    at JsonWireProtocol.handleSessionCreateError (/Users/aarusi.tuteja/Nightwatch Framework Dump/node_modules/nightwatch/lib/transport/transport.js:110:15)\n    at HttpRequest.<anonymous> (/Users/aarusi.tuteja/Nightwatch Framework Dump/node_modules/nightwatch/lib/transport/transport.js:175:16)\n    at HttpRequest.emit (events.js:376:20)\n    at HttpResponse.<anonymous> (/Users/aarusi.tuteja/Nightwatch Framework Dump/node_modules/nightwatch/lib/http/request.js:143:19)\n    at HttpResponse.emit (events.js:376:20)\n    at IncomingMessage.<anonymous> (/Users/aarusi.tuteja/Nightwatch Framework Dump/node_modules/nightwatch/lib/http/response.js:58:14)\n    at IncomingMessage.emit (events.js:388:22)\n    at endReadableNT (internal/streams/readable.js:1336:12)\n    at processTicksAndRejections (internal/process/task_queues.js:82:21)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I log into the CMS as \"admin\"",
+            "match": {
+              "location": "step-definitions/step-definitions/backend/globals/globals.js:18"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "I am on the backend page \"/user/login\"",
+            "match": {
+              "location": "step-definitions/step-definitions/backend/globals/globals.js:69"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 15000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@core",
+            "line": 1
+          },
+          {
+            "name": "@backend",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "create-a-basic-page-with-minimal-fields",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Create a Basic page with minimal fields",
+    "tags": [
+      {
+        "name": "@core",
+        "line": 1
+      },
+      {
+        "name": "@backend",
+        "line": 1
+      }
+    ],
+    "uri": "features/login.feature"
+  }
+]

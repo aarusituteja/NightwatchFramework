@@ -1,0 +1,57 @@
+{
+  "name": "NightWatchJS-Cucumber",
+  "version": "1.3.3",
+  "private": true,
+  "description": " Nightwatch Automation Testing - JavaScript & Gherkin ",
+  "author": "Name",
+  "main": "index.js",
+  "scripts": {
+    "test": "nightwatch",
+    "cucumber": "cucumber-js --require cucumber.conf.js --require step-definitions --retry 2 --format @cucumber/pretty-formatter --format json:report/cucumber_report.cucumber",
+    "cucumber:backend": "APP=BE npm run cucumber features/backend/",
+    "cucumber:frontend": "APP=FE npm run cucumber features/frontend/",
+    "cucumber:all": "APP=ALL npm run cucumber features/backend/ features/frontend/",
+    "lint": "eslint --ext .js . && gherkin-lint features/**"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kavyajain-qa/NightWatchJS-Cucumber.git"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kavyajain-qa/NightWatchJS-Cucumber/issues"
+  },
+  "homepage": "https://github.com/kavyajain-qa/NightWatchJS-Cucumber#readme",
+  "devDependencies": {
+    
+    "@types/module-alias": "^2.0.1",
+    "@types/node-fetch": "^2.5.12",
+    "chromedriver": "*",
+    "cucumber-html-reporter": "^5.3.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-node": "^11.1.0",
+    "gherkin-lint": "^4.2.1",
+    "husky": "^6.0.0",
+    "mkdirp": "^1.0.4",
+    "nightwatch": "^1.5.1"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^7.0.0",
+    "@cucumber/pretty-formatter": "^1.0.0-alpha.0",
+    "chalk": "^2.4.2",
+    "dotenv": "^8.2.0",
+    "module-alias": "^2.2.2",
+    "nightwatch-api": "^3.0.1",
+    "nightwatch-vrt": "^0.2.10",
+    "node-fetch": "^2.6.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "prepare": {},
+  "_moduleAliases": {
+    "@": "."
+  }
+}
